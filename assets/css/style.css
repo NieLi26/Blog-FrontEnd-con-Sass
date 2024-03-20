@@ -720,6 +720,83 @@ h3 {
   font-size: 1.6rem;
 }
 
+.login {
+  padding: 3rem 0;
+  max-width: 60rem;
+}
+.login__heading {
+  text-align: center;
+  font-weight: 400;
+}
+.login input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+.login .boton {
+  all: unset;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login .boton--enviar {
+  background-color: #67C770;
+  color: #FFF;
+  padding: 2rem 0;
+}
+.login .boton--enviar:hover {
+  filter: drop-shadow(16px 16px 20px #67C770) invert(75%);
+}
+.login .boton--google {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.login .boton--google:hover {
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
+.login .boton__logo {
+  width: 4rem;
+}
+
+.form__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.form__botones {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+.form__url {
+  text-align: center;
+}
+.form__url a {
+  font-weight: bold;
+}
+.form .recordarme {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form .recordarme__contenido {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .registro {
   padding: 3rem 0;
   max-width: 60rem;

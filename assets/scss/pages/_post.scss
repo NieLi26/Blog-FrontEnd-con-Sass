@@ -1,0 +1,100 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+
+.detalle {
+    padding: v.$separacion 0;
+    border-bottom: 2px solid rgb(0, 0, 0, .3);
+
+    &__heading {
+        margin-top: 0;
+    }
+
+    .card {
+        &__body {
+            margin-bottom: 2rem;
+        }
+
+        &__flex {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        &__info {
+            background-color: rgb(0, 0, 0, .1);
+            border-radius: 2rem;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &__imagen {
+            margin: 0 auto;
+            max-width: 70rem;
+        }
+
+        &__logo {
+            width: 5rem;
+            img {
+                object-fit: cover;
+            }
+        }
+
+        &__fecha,
+        &__texto {
+            font-size: 2rem;
+        }
+    }
+}
+
+.relacionados {
+    border-bottom: 2px solid rgb(0, 0, 0, .3);
+    padding: v.$separacion 0;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    
+        // @media (min-width: 768px) { 
+        //     grid-template-columns: repeat(2, 1fr);
+        // }
+        @include m.telefono {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    
+        .card {
+            &__imagen {
+                img {
+                    height: 20rem;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__footer {
+                gap: 1rem;
+            }
+
+            &__logo {
+                width: 4rem;
+                img {
+                    object-fit: cover;
+                }
+            }
+            &__fecha,
+            &__texto {
+                font-size: 1.6rem;
+            }
+
+            
+        }
+    
+    }
+}

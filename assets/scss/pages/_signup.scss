@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as v;
+
+.registro {
+    padding: v.$separacion 0;
+
+    &__heading {
+        text-align: center;
+        font-weight: 400;
+    }
+
+    max-width: 60rem;
+
+    input {
+        width: 100%;
+        border: 1px solid rgb(0, 0, 0, .3);
+        outline: none;
+        padding: 2rem 4rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+    }
+
+    .boton {
+        all: unset;
+        background-color: rgb(255, 255, 255, .6);
+        border-radius: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+
+
+        &--crear {
+            background-color: v.$verde;
+            color: #FFF;
+            padding: 2rem 0;
+            
+            &:hover {
+                // opacity: .8;
+                filter: drop-shadow(16px 16px 20px v.$verde) invert(75%);
+            }
+        }
+        &--google {
+            border: 1px solid rgb(0, 0, 0, .3);
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+
+            &:hover {
+                filter: drop-shadow(16px 16px 20px red) invert(75%);
+            }
+        }
+        &__logo {
+            width: 4rem;
+        }
+    }
+}
+
+.form {
+    &__contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; 
+    } 
+    &__botones {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    &__url {
+        text-align: center;
+        a {
+            font-weight: bold;
+        }
+    }
+}

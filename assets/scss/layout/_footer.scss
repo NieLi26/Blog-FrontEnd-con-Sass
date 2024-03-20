@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.footer {
+    padding: v.$separacion 0;
+
+    &__contenido {
+        
+        @include m.telefono {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        // @media (min-width: 768px) { 
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        // }
+    }
+
+    &__texto {
+        font-size: 2rem;
+    }
+}

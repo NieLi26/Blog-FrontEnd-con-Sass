@@ -1,0 +1,17 @@
+
+.barra {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &__logo {
+        width: 5.5rem;
+        img {
+            border-radius: 1rem;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 0;
+    }
+}
